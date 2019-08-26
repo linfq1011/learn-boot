@@ -25,10 +25,18 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
 	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+
+	implementation 'javax.validation:validation-api:2.0.1.Final'
+
+	implementation 'com.alibaba:druid:1.1.19'
 
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.9'
-	implementation 'com.alibaba:fastjson:1.2.59'
+
+	implementation 'mysql:mysql-connector-java:5.1.48'
+	implementation 'com.alibaba:druid-spring-boot-starter:1.1.18'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
